@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="parallax-container logueo">
+     <div class="row"><br>
+       <div class="col m8 s8 offset-m2 offset-s2 center">
+         <h4 class="truncate bg-card-user">
+         <div class="row login">
+           <h4>Registro.</h4>
+           <form (submit)="onSubmitAddUser()" class="col s12">
+             <div class="row">
+                <div class="input-field col m12 s12">
+                 <i class="material-icons iconis prefix">account_box</i>
+                 <input id="email" type="email"  name="email" [(ngModel)]="email" >
+                 <label for="email">Nombre o Email</label>
+               </div>
+             </div>
+             <div class="row">
+               <div class="input-field col m12 s12">
+                 <i class="material-icons iconis prefix">enhanced_encryption</i>
+                 <input id="password" type="password"  name="password" [(ngModel)]="password" >
+                 <label for="password">Contraseña</label>
+               </div>
+             </div>
+               <input class="btn waves-effect waves-light  blue lighten-2" type="submit" value="Registrarse">
+           </form>
+         </div>
+         </h4>
+        </div>
+     </div>
+   </div>
+  </div>

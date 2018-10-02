@@ -1,0 +1,24 @@
+<nav class="grey darken-4">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center"><img src="https://cdn3.iconfinder.com/data/icons/happily-colored-snlogo/128/medium.png"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li *ngIf="!isLogin"><a href="/">Inicio</a></li>
+        <li *ngIf="!isLogin"><a href="/login">Login</a></li>
+        <li *ngIf="!isLogin"><a href="/registrar">Regitrate</a></li>
+        <li *ngIf="isLogin"><a href="/" (click)="onClickLogout()">Salir</a></li>
+      </ul>
+      <ul class="sidenav" id="mobile-demo">
+          <li *ngIf="!isLogin"><a href="/">Inicio</a></li>
+          <li *ngIf="!isLogin"><a href="/login">Login</a></li>
+          <li *ngIf="!isLogin"><a href="/registrar">Regitrate</a></li>
+          <li *ngIf="isLogin"><a href="/" (click)="onClickLogout()" >Salir</a></li>
+        </ul>
+    </div>
+  </nav>
+
+ 
+
+
+  
+          
